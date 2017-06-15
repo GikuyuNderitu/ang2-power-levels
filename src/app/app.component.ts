@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'app';
+  power: number = 100;
+  newPower: number = 100;
+
+  setPower() {
+    this.power = this.newPower;
+  }
 }
